@@ -8,6 +8,7 @@ public class ManagerCookie {
     private static WebDriver driver = Browser.BROWSER.getDriver();
 
     public static void addCookie(String name, String value) {
+
         driver.manage().addCookie(new Cookie(name, value));
     }
 
